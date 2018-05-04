@@ -1,6 +1,3 @@
-# material-design-demo
-Spike to assess Material UI, a React based UI framework from Google
-
 # Material-UI demo
 Spike to assess [Material UI](https://material-ui-next.com/), a React based UI framework from Google
 
