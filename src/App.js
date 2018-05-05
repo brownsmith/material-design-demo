@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import PropTypes from 'prop-types';
 import Button from 'material-ui/Button';
 import Grid from 'material-ui/Grid';
 import Paper from 'material-ui/Paper';
@@ -16,10 +15,6 @@ import Table, { TableBody, TableCell, TableHead, TableRow } from 'material-ui/Ta
 const styles = {};
 
 class App extends Component {
-
-  constructor(props) {
-    super(props);
-  }
 
   render() {
 
