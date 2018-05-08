@@ -37,14 +37,14 @@ class App extends Component {
     return (
       <div className="App">
         <Grid container spacing={24}>
-          <AppBar position="static" color="default">
+          <AppBar position="static" color="default" children={'test string'}>
             <Toolbar>
               <Typography variant="title" color="inherit">
                 Admin application - Material UI Next
               </Typography>
             </Toolbar>
           </AppBar>
-          <Grid item xs={6} sm={3} className="panel">
+          <Grid item xs={12} md={3} className="panel">
             <Paper className="paper">
 
               <List>
@@ -79,7 +79,7 @@ class App extends Component {
               </List>
             </Paper>
           </Grid>
-          <Grid item xs={6} sm={9} className="panel">
+          <Grid item xs={12} md={9} className="panel">
             <h2>Customer order details</h2>
             <Paper className={classes.root}>
               <Table className={classes.table}>
