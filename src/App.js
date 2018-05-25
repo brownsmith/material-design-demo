@@ -10,9 +10,10 @@ import List, { ListItem, ListItemText } from 'material-ui/List';
 import Avatar from 'material-ui/Avatar';
 import { withStyles } from 'material-ui/styles';
 import Table, { TableBody, TableCell, TableHead, TableRow } from 'material-ui/Table';
+import { themeStyles } from './theme';
+import { withTheme } from './withTheme.tsx';
 
-
-const styles = {};
+// const styles = {};
 
 class App extends Component {
 
@@ -103,7 +104,7 @@ class App extends Component {
                         <TableCell numeric>{n.carbs}</TableCell>
                         <TableCell numeric>{n.protein}</TableCell>
                         <TableCell>
-                        <Button variant="raised" color="primary" className="primary">
+                        <Button variant="raised">
                           Remove
                         </Button>
                         </TableCell>
@@ -120,4 +121,5 @@ class App extends Component {
   }
 }
 
-export default withStyles(styles)(App);
+export default withStyles(themeStyles)(App);
+// export default withTheme(withStyles(themeStyles)(App));
